@@ -34,10 +34,11 @@ public class Picture
         wall.moveVertical(80);
         wall.changeSize(100);
         wall.makeVisible();
+        wall.changeColor("blue");
 
         window = new Square();
         window.changeColor("black");
-        window.moveHorizontal(20);
+        window.moveHorizontal(10);
         window.moveVertical(100);
         window.makeVisible();
 
@@ -76,7 +77,7 @@ public class Picture
     {
         if(wall != null)   // only if it's painted already...
         {
-            wall.changeColor("red");
+            wall.changeColor("blue");
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
